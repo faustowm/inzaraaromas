@@ -253,63 +253,85 @@ ul {
 }
 
 /* productos grid */
-.main-productos {
+.carousel-grid {
     display: grid;
-    grid-template-areas:
-        /*areas de plantilla de cuadricula*/
-        "title title title"
-        "image1 image2 image3"
-        "image4 image5 image6";
-    gap: 20px;
-    text-align: center;
+    grid-template-columns: auto; /* Adjust the column size if needed */
+    gap: 30px;
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    white-space: nowrap; /* Prevent wrapping of items */
     padding: 20px;
-}
-
-.productos {
-    grid-area: title;
-    font-size: 28px;
-
-}
-
-.container-productos {
-    background-color: #dcd3ff;
-    color: black;
+  }
+  
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 10px;
+  }
+  
+  .carousel-title {
     font-weight: bold;
-    font-size: 20px;
-    text-transform: inherit;
-    /*transformacion de texto (heredar)*/
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: black;
     font-family: 'Archivo Black', sans-serif;
-    margin: 10px;
-}
-
-/* Asignación de áreas para cada imagen */
-.container-productos:nth-child(2) {
-    grid-area: image1;
-}
-
-.container-productos:nth-child(3) {
-    grid-area: image2;
-}
-
-.container-productos:nth-child(4) {
-    grid-area: image3;
-}
-
-.container-productos:nth-child(5) {
-    grid-area: image4;
-}
-
-.container-productos:nth-child(6) {
-    grid-area: image5;
-}
-
-.container-productos:nth-child(7) {
-    grid-area: image6;
-}
-
-
+  }
+  
+  .carousel-text {
+    font-size: 1rem;
+    color: black;
+  }
+  
+  .carousel {
+    width: 100%;
+  }
+  
+  .carousel-item {
+    position: relative;
+    text-align: center;
+  }
+  
+  .carousel-item img {
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    display: inline-block;
+  }
+  
+  .carousel-control-prev {
+    left: 10px;
+  }
+  
+  .carousel-control-next {
+    right: 10px;
+  }
+  
+  
 /*puntos de venta */
 .class-iframe {
     display: block;
