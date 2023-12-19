@@ -54,7 +54,7 @@ body {
 
 
 .Logo {
-    width: 40vh;
+    width: 50vh;
     /* Ajusta el tamaño según tus necesidades */
     height: auto;
     margin-right: 10px;
@@ -188,79 +188,74 @@ ul {
     font-size: 3rem;
     color: black;
     margin-bottom: 3rem;
-    font-family: 'Archivo Black', sans-serif;
-
 }
 
 .tarjetas {
-    background: #5D4157;
-    background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);
-    background: linear-gradient(to right, #A8CABA, #5D4157);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /*columnas/plantilla/cuadricula*/
     gap: 1rem;
     padding: 2rem;
-    font-size: bold;
-    font-family: 'Archivo Black', sans-serif;
 }
 
 .tarjeta1,
 .tarjeta2,
 .tarjeta3 {
     padding: 20px;
-    border: 2px solid black;
+    border: 2px solid #fff;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.tarjeta1,
-.tarjeta2,
-.tarjeta3 {
-    background: #74ebd5;
-    background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);
-    background: linear-gradient(to right, #ACB6E5, #74ebd5);
+.tarjeta1:hover,
+.tarjeta2:hover,
+.tarjeta3:hover {
+    transform: scale(1.05);
+    background: #E8CBC0;
+    background: -webkit-linear-gradient(to right, #636FA4, #E8CBC0);  
+    background: linear-gradient(to right, #636FA4, #E8CBC0); 
 }
 
 .tarjeta-tittle {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     color: black;
     font-family: 'Archivo Black', sans-serif;
+    
 }
 
 .tarjeta-text {
     font-size: 1rem;
     margin-bottom: 1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
+    font-family: 'Arial', sans-serif;
 }
 
 .tarjeta-item {
     font-size: 3rem;
     margin-bottom: 1rem;
-
+    color: black;
 }
 
 .tarjetas-link {
-    color: blue;
+    color: #007bff;
     font-size: 1rem;
-}
-
-.tarjetas-link:hover {
-    color: #ff6f61;
+    transition: color 0.3s ease-in-out;
 }
 
 /* productos grid */
-.carousel-grid {
-    display: grid;
-    grid-template-columns: auto; /* Adjust the column size if needed */
-    gap: 30px;
-    overflow-x: auto; /* Allow horizontal scrolling if necessary */
-    white-space: nowrap; /* Prevent wrapping of items */
+ .carousel-grid {
+    max-width: 1000px; /* Establece el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    overflow-x: auto;
+    white-space: nowrap;
     padding: 20px;
-  }
+}
+.carousel {
+    max-width: 100%; /* Establece el ancho máximo del carrusel */
+    margin: 0 auto; /* Centra el carrusel en su contenedor */
+}
   
   .carousel-container {
     display: flex;
@@ -333,11 +328,6 @@ ul {
   
   
 /*puntos de venta */
-.class-iframe {
-    display: block;
-    margin: auto;
-}
-
 .class-venta {
     margin: 20px;
     padding: 20px;
@@ -479,95 +469,32 @@ textarea {
     .header {
         flex-direction: column;
         align-items: flex-start;
-        background: #009FFF;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ec2F4B, #009FFF);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     }
 
     .menu-item ul {
         flex-direction: column;
         gap: 10px;
-        background: #009FFF;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ec2F4B, #009FFF);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     }
 
     .hero {
         flex-direction: column;
         align-items: center;
         max-width: 100%;
-        background: #009FFF;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ec2F4B, #009FFF);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     }
 
     .hero-left {
         max-width: 100%;
-        background: #009FFF;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ec2F4B, #009FFF);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     }
-
-    .tarjetas-sociales {
-
-        background: #009FFF;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ec2F4B, #009FFF);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    }
-
-    .tarjetas-tittle {
-        background: #009FFF;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ec2F4B, #009FFF);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     }
 
     .tarjetas {
         flex-direction: column;
-        background: #009FFF;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ec2F4B, #009FFF);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     }
 
     .preparado {
         flex-direction: column;
-        background: #009FFF;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ec2F4B, #009FFF);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ec2F4B, #009FFF);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     }
 
-}
 
 /* Media queries para teléfonos móviles */
 @media screen and (max-width: 480px) {
