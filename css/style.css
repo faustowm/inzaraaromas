@@ -433,7 +433,11 @@ textarea {
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif
 }
-
+.footer{
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
 .footer-tittle {
     text-align: center;
     padding: .5rem;
